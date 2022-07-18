@@ -22,7 +22,7 @@ function getWeather() {
     }
 
 
-    request.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=" + inpCity + "&units=metric&lang=en&appid=5310a5ed72e96a1458bfcdf1a5cc7ad1");
+    request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=" + inpCity + "&units=metric&lang=en&appid=5310a5ed72e96a1458bfcdf1a5cc7ad1");
     request.onload = function(){
         if(request.status === 200){
             topBlock.style.display = 'block'
@@ -52,7 +52,7 @@ function getWeather() {
 
     // HOURLY
 
-    requestHourly.open("GET", "http://api.openweathermap.org/data/2.5/forecast?q=" + inpCity + "&units=metric&appid=5310a5ed72e96a1458bfcdf1a5cc7ad1");
+    requestHourly.open("GET", "https://api.openweathermap.org/data/2.5/forecast?q=" + inpCity + "&units=metric&appid=5310a5ed72e96a1458bfcdf1a5cc7ad1");
     requestHourly.onload = function(){
         if(requestHourly.status === 200){
             let hourlyObj = JSON.parse(requestHourly.response)
