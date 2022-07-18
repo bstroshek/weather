@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <header>
+                <h2 class="title">Current Weather</h2>
+                <div class="search">
+                    <input id="getCity" type="search" placeholder="Search">
+                    <button id="getCityBtn" onclick="getWeather()"></button>
+                    <div class="error" id="js_error">Invalid City Name!</div>
+                </div>
+            </header>
+            <div class="top" id="js_top">
+                <div class="top__header">
+                    <h3 class="title" id="city_name"></h3>
+                    <p class="date" id="js_today"></p>
+                </div>
+                <div class="top__content">
+                    <div class="icon-block">
+                        <h4 id="description"></h4>
+                        <div class="icon"></div>
+                        <img id="weatherImg" src="" alt="sun" width="150">
+                    </div>
+                    <div class="temperature"><span id="tempId"></span><sup>o</sup>C</div>
+                    <table class="content-table">
+                        <tr>
+                            <td>Min temperature</td>
+                            <td><span id="tempMin"></span><sup>o</sup>C</td>
+                        </tr>
+                        <tr>
+                            <td>Max temperature</td>
+                            <td><span id="tempMax"></span><sup>o</sup>C</td>
+                        </tr>
+                        <tr>
+                            <td>Wind speed(km/h)</td>
+                            <td id="windSpeed"></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="bottom" id="js_bottom">
+                <h4 class="bottom__header">Hourly</h4>
+                <table class="bottom__table">
+                    <tr>
+                        <th>Today</th>
+                        <th id="time1"></th>
+                        <th id="time2">10:00</th>
+                        <th id="time3">13:00</th>
+                        <th id="time4">15:00</th>
+                        <th id="time5">18:00</th>
+                        <th id="time6">21:00</th>
+                    </tr>
+                    <tr class="icon-row">
+                        <td></td>
+                        <td><img id="icon1" src="" alt="icon"></td>
+                        <td><img id="icon2" src="" alt="icon"></td>
+                        <td><img id="icon3" src="" alt="icon"></td>
+                        <td><img id="icon4" src="" alt="icon"></td>
+                        <td><img id="icon5" src="" alt="icon"></td>
+                        <td><img id="icon6" src="" alt="icon"></td>
+                    </tr>
+                    <tr>
+                        <td>Forecast</td>
+                        <td id="descr1"></td>
+                        <td id="descr2"></td>
+                        <td id="descr3"></td>
+                        <td id="descr4"></td>
+                        <td id="descr5"></td>
+                        <td id="descr6"></td>
+                    </tr>
+                    <tr>
+                        <td>Temp(<sup>0</sup>C)</td>
+                        <td><span id="temp1"></span>(<sup>0</sup>C)</td>
+                        <td><span id="temp2"></span>(<sup>0</sup>C)</td>
+                        <td><span id="temp3"></span>(<sup>0</sup>C)</td>
+                        <td><span id="temp4"></span>(<sup>0</sup>C)</td>
+                        <td><span id="temp5"></span>(<sup>0</sup>C)</td>
+                        <td><span id="temp6"></span>(<sup>0</sup>C)</td>
+                    </tr>
+                    <tr>
+                        <td>Wind (km/h)</td>
+                        <td id="wind1"></td>
+                        <td id="wind2"></td>
+                        <td id="wind3"></td>
+                        <td id="wind4"></td>
+                        <td id="wind5"></td>
+                        <td id="wind6"></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

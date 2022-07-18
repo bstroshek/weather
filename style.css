@@ -1,0 +1,141 @@
+:root {
+    --accent: #6aa3a9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f3f2f1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #545758;
+}
+main {
+    width: 100%;
+    padding: 20px 50px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    padding: 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .title {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.5em;
+}
+header .search {
+    width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .search input[type="search"] {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--accent);
+    background: transparent;
+    font-size: .9em;
+    color: #807e7e;
+    width: 100%;
+    margin-right: 10px;
+}
+header .search button {
+    color: transparent;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: url("icons/icons8-search-100-2.png") center/contain no-repeat, transparent;
+    cursor: pointer;
+}
+
+
+.top {
+    display: none;
+    padding: 30px 30px 30px 50px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+.top__header {
+    color: var(--accent);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.top__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top__content .icon-block img {
+    margin: 10px 0 0 20px;
+}
+.top__content .temperature {
+    font-size: 4em;
+}
+.top__content .temperature sup {
+    font-size: .5em;
+    vertical-align: text-top;
+}
+
+.top__content .content-table {
+    width: 35%;
+    padding-right: 5%;
+}
+.top__content .content-table td {
+    padding: 15px 0;
+}
+
+.bottom {
+    display: none;
+    padding: 30px;
+    background: #fff;
+}
+.bottom__header {
+    color: var(--accent);
+    padding-left: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.bottom__table {
+    width: 100%;
+}
+.bottom__table tr {
+    text-align: left;
+}
+.bottom__table tr td, .bottom__table tr th {
+    padding-bottom: 15px;
+}
+.error {
+    display: none;
+    width: 100%;
+    padding: 5px 10px;
+    color: red;
+    background: #f5d0d6;
+    box-shadow: 2px 2px 10px #ccc;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -35px;
+    border-radius: 3px;
+}
+
+
+
+
+
